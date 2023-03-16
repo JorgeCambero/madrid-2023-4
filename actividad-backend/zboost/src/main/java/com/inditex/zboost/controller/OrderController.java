@@ -34,6 +34,15 @@ public class OrderController {
      *
      * PISTA: Si el limit no es valido, puedes usar la excepcion InvalidParameterException para notificarlo.
      */
+    @GetMapping("/orders/{nProd}")
+    public Order getProduct(@PathVariable(name = "nProd",required=true)int nProd) {
+    	if (nProd>=1 && nProd<=100) {
+    		
+    	}else{
+    		//EXcepcion
+    	}
+    	return (Order) orderService.findOrders(nProd);
+    }
 
     @GetMapping("/orders/{orderId}")
     public OrderDetail getProductDetail(@PathVariable(name = "orderId", required = true) long orderId) {

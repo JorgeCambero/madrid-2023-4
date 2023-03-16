@@ -3,6 +3,7 @@ package com.inditex.zboost.controller;
 import com.inditex.zboost.entity.Product;
 import com.inditex.zboost.service.ProductService;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
